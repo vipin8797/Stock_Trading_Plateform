@@ -1,32 +1,33 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light border-bottom" style={{ backgroundColor: "#fff" }}>
-            <a className="navbar-brand mx-5" href="#">
+            <Link className="navbar-brand mx-5" to={"/"}>
                 <img src="/media/images/logo.svg" style={{ width: "25%" }} alt="logo" />
-            </a>
+            </Link>
            
 
                 <div className="collapse navbar-collapse p-2" id="navbarSupportedContent">
             <form className="form-inline my-2 my-lg-0">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                            <a className="nav-link active fs-5" href="#">
+                            <Link className="nav-link active fs-5" to={"/signup"}>
                                 SignUp <span className="sr-only">(current)</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active fs-5" href="#">About</a>
+                            <Link className="nav-link active fs-5" to={"/about"}>About</Link>
                         </li>
                           <li className="nav-item">
-                            <a className="nav-link active fs-5" href="#">Product</a>
+                            <Link className="nav-link active fs-5" to={"/product"}>Product</Link>
                         </li>
                           <li className="nav-item">
-                            <a className="nav-link active fs-5" href="#">Pricing</a>
+                            <Link className="nav-link active fs-5" to={"/pricing"}>Pricing</Link>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link active fs-5" href="#">Support</a>
+                            <Link className="nav-link active fs-5" to={"/support"}>Support</Link>
                         </li>
                        
                     </ul>
