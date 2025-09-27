@@ -13,10 +13,3 @@ function Hero() {
 }
 
 export default Hero;
-<div className="container">
-           <div className="row">
-            <h1>
-                Now, we are breaking ground with our technology.
-            </h1>
-           </div>
-</div>
